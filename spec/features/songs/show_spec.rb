@@ -18,7 +18,7 @@ describe 'the songs show page' do
     song_2 = artist.songs.create!(title: "Cowboy Take Me Away", length: 297, play_count: 255)
 
     visit "/songs/#{song.id}"
-    save_and_open_page
+
     expect(page).to have_content(artist.name)
   end
 end
