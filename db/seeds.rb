@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+@whitney_houston = Artist.create!(name: "Whitney Houston")
+@always_love = @whitney_houston.songs.create!(title: "I Will Always Love You", length: 458, play_count: 999)
+@wanna_dance = @whitney_houston.songs.create!(title: "I Wanna Dance With Somebody", length: 758, play_count: 1081)
+
+
